@@ -1,7 +1,10 @@
 @import 'variaveis';
 
-@mixin enfase {
-  color: $cor-primaria;
+@mixin enfase ($tamanho, $estilo, $cor) {
+  color: $cor;
+  font-size: $tamanho;
+  margin: 0;
+  font-family: $estilo;
   font-weight: bold;
 }
 
@@ -10,9 +13,21 @@
 }
 
 @mixin btn {
+	background-color: $cor-principal;
+  color: white;
+  border-radius: 5px;
+  height: 2.5rem;
+  width: 11rem;
+  font-size: 1rem;
 
 }
 
 @mixin input {
-    
+  border: 1px solid $cor-principal;
+  border-radius: 5px;
+  height: 1rem;
+  width: 11rem;
+  font-size: 1rem;
+  margin: 5px;
+  padding: 5px;
 }

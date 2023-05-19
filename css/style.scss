@@ -1,5 +1,6 @@
 @import 'variaveis';
 @import 'mixins';
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Jaldi&family=Ysabeau:ital,wght@0,300;1,400&display=swap');
 
 .corpo {
     width: $largura-pagina;
@@ -12,6 +13,7 @@
         color: $cor-principal;
         font-size: 2rem;
         margin: 2rem 0 1rem 0;
+        font-family: $fonte-titulo;
     }
 
     .corpo__apresentacao {
@@ -21,20 +23,36 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        font-family: $fonte-texto;
         
         .corpo__apresentacao__texto__apresentacao {
             margin: 1rem;
             text-align: center;
+            font-size: 1.2rem;
         }
 
         .corpo__apresentacao__texto__indicacao {
             margin: 1rem;
             text-align: center;
-            font-size: 1.5rem;
+            font-size: 1rem;
         }
 
         .corpo__apresentacao__btn__comecar {
             @include btn;
+            margin-top: 5px;
+
+            &:hover {
+                background-color: $cor-principal-claro;
+                color: white;
+                border: 1px solid $cor-principal;
+            }
+
+            &:active {
+                background-color: $cor-principal-escuro;
+                color: white;
+                border: 1px solid $cor-principal;
+            }
         }
     }
 }

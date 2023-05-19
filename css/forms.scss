@@ -1,0 +1,30 @@
+@import 'mixins';
+@import 'variaveis';
+
+.corpo {
+  width: $largura-pagina;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+    .corpo__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+  .texto {
+    @include enfase(1rem, $fonte-texto, $cor-principal);
+  }
+
+  .input {
+    @include input;
+  }
+
+
+
+}
