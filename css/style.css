@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Jaldi&family=Ysabeau:ital,wght@0,300;1,400&display=swap");
 .corpo {
   width: 412px;
@@ -55,22 +54,3 @@
 
 
 /*# sourceMappingURL=style.css.map */
-=======
-/* Error: Expected digit.
- *    ,
- * 26 |         .corpo__apresentacao__texto__apresentacao {
- *    |          ^
- *    '
- *   style.scss 26:10  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected digit.\a    \2577 \a 26 \2502          .corpo__apresentacao__texto__apresentacao {\a    \2502           ^\a    \2575 \a   style.scss 26:10  root stylesheet";
-}
->>>>>>> 5059414 (Pequenas mudanças)

@@ -1,5 +1,6 @@
 @import 'mixins';
 @import 'variaveis';
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Jaldi&family=Ysabeau:ital,wght@0,300;1,400&display=swap");
 
 .corpo {
   width: $largura-pagina;
@@ -17,12 +18,21 @@
         margin: 0 auto;
     }
 
+  .corpo__container__titulo {
+    @include enfase(2rem, $fonte-titulo, $cor-principal);
+    margin-bottom: 1rem;
+  }
+
   .texto {
     @include enfase(1rem, $fonte-texto, $cor-principal);
   }
 
   .input {
     @include input;
+  }
+
+  .btn {
+    @include btn;
   }
 
 
