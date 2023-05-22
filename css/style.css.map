@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"version":3,"sourceRoot":"","sources":["style.scss","_variaveis.scss","_mixins.scss"],"names":[],"mappings":"AAEQ;AAER;EACI,OCDa;EDEb;EACA;EACA;EACA;;AAEA;EACI,OCZQ;EDaR;EACA;EACA;;AAGJ;EACI,OChBS;EDiBT;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;;AAGJ;EACI;EACA;EACA;;AAGJ;EE3BP,kBDZe;ECad;EACA;EACA;EACA;EACA;EFwBU;;AAEA;EACI,kBC3CM;ED4CN;EACA;;AAGJ;EACI,kBChDO;EDiDP;EACA;;;AAOhB","file":"style.css"}
+=======
+{"version":3,"sourceRoot":"","sources":["style.scss","_variaveis.scss","_mixins.scss"],"names":[],"mappings":"AAGA;EACI,OCFa;EDGb;EACA;EACA;EACA;;AAEA;EACI,OCXQ;EDYR;EACA;;AAGJ;EACI,OChBS;EDiBT;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;;AAGJ;EACI;EACA;EACA;;AAGJ;EEvBP,kBDZe;ECaf;EACA;EACA;EACA;;;AF0BD","file":"style.css"}
+>>>>>>> 5059414 (Pequenas mudanças)
