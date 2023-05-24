@@ -32,7 +32,8 @@
   }
 
   .btn {
-    @include btn;
+    @include btn (1.5rem, 6rem);
+    margin: 1rem 0 1rem 0
   }
 
 

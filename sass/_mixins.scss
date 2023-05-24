@@ -8,18 +8,24 @@
   font-weight: bold;
 }
 
+@mixin texto {
+  color: $cor-secundaria;
+  font-size: 1rem;
+  margin: 0;
+  font-family: $fonte-texto;
+}
+
 @mixin posicionamento {
 
 }
 
-@mixin btn {
+@mixin btn ($altura, $largura) {
 	background-color: $cor-principal;
   color: white;
   border-radius: 5px;
-  height: 1.5rem;
-  width: 6rem;
+  height: $altura;
+  width: $largura;
   font-size: 0.8rem;
-  margin: 1rem 0 1rem 0
 
 }
 
