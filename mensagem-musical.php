@@ -1,3 +1,34 @@
+<?php
+
+if(isset($_POST['submit']))
+
+{
+
+    include_once('config.php');
+
+    $mensagemMusicalES = $_POST['mensagemMusicalES'];
+    $mensagemMusicalCD = $_POST['mensagemMusicalCD'];
+
+    $sql = "DELETE FROM `mensagem-musical`";
+    if ($conexao->query($sql) === TRUE) {
+        echo "Record deleted successfully";
+    } else {
+        echo "Error deleting record: " . $conexao->error;
+    }
+
+    $stmt = $conexao->prepare("INSERT INTO `mensagem-musical`(mensagemMusicalES, mensagemMusicalCD) VALUES (?, ?)");
+    $stmt->bind_param("ss", $mensagemMusicalES, $mensagemMusicalCD);
+    $stmt->execute();
+
+    echo "New record created successfully";
+
+    $stmt->close();
+    $conexao->close();
+    
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +64,7 @@
         </section>
 
         <div class="btns">
-            <button class="btn" type="submit">Enviar</button>
+            <button class="btn" type="submit" name="submit">Enviar</button>
             <button type="button" onclick="window.location.href='menu.html'" class="btn">Voltar</button>
         </div>
 

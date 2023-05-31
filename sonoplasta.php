@@ -1,3 +1,33 @@
+<?php
+
+if(isset($_POST['submit']))
+
+{
+
+    include_once('config.php');
+
+    $provaiEVede = $_POST['provaiEVede'];
+
+    $sql = "DELETE FROM sonoplasta";
+    if ($conexao->query($sql) === TRUE) {
+        echo "Record deleted successfully";
+    } else {
+        echo "Error deleting record: " . $conexao->error;
+    }
+
+    $stmt = $conexao->prepare("INSERT INTO sonoplasta(provaiEVede) VALUES (?)");
+    $stmt->bind_param("s", $provaiEVede);
+    $stmt->execute();
+
+    echo "New record created successfully";
+
+    $stmt->close();
+    $conexao->close();
+    
+}
+
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,7 +52,7 @@
         </section>
 
         <div class="btns">
-            <button class="btn" type="submit">Enviar</button>
+            <button class="btn" type="submit" name="submit">Enviar</button>
             <button type="button" onclick="window.location.href='menu.html'" class="btn">Voltar</button>
         </div>
 

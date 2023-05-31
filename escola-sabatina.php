@@ -1,3 +1,40 @@
+<?php
+
+if(isset($_POST['submit']))
+
+{
+
+    include_once('config.php');
+
+
+    $hinoInicialES = $_POST['hinoInicialES'];
+    $boasVindasES = $_POST['boasVindasES'];
+    $oracaoES = $_POST['oracaoES'];
+    $informativoES = $_POST['informativoES'];
+    $estudoDaLicaoES = $_POST['estudoDaLicaoES'];
+    $encEscolaSabatinaES = $_POST['encEscolaSabatinaES'];
+
+
+    $sql = "DELETE FROM `escola-sabatina`";
+    if ($conexao->query($sql) === TRUE) {
+        echo "Record deleted successfully";
+    } else {
+        echo "Error deleting record: " . $conexao->error;
+    }
+
+    $stmt = $conexao->prepare("INSERT INTO `escola-sabatina`(hinoInicialES, boasVindasES, oracaoES, informativoES, estudoDaLicaoES, encEscolaSabatinaES) VALUES (?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("ssssss", $hinoInicialES, $boasVindasES, $oracaoES, $informativoES, $estudoDaLicaoES, $encEscolaSabatinaES);
+    $stmt->execute();
+
+    echo "New record created successfully";
+
+    $stmt->close();
+    $conexao->close();
+    
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,7 +87,7 @@
         </section>
 
         <div class="btns">
-            <button class="btn" type="submit">Enviar</button>
+            <button class="btn" type="submit" name="submit">Enviar</button>
             <button type="button" onclick="window.location.href='menu.html'" class="btn">Voltar</button>
         </div>
 

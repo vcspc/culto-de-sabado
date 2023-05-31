@@ -6,12 +6,24 @@ if(isset($_POST['submit']))
 
     include_once('config.php');
 
-    //print_r($_POST['adoracaoInfantil']);//
-
     $adoracaoInfantil = $_POST['adoracaoInfantil'];
 
-    $result = mysqli_query($conexao, "INSERT INTO eventos(adoracaoInfantil) VALUES ('$adoracaoInfantil')");
+    $sql = "DELETE FROM `adoracao-infantil`";
+    if ($conexao->query($sql) === TRUE) {
+        echo "Record deleted successfully";
+    } else {
+        echo "Error deleting record: " . $conexao->error;
+    }
 
+    $stmt = $conexao->prepare("INSERT INTO `adoracao-infantil`(adoracaoInfantil) VALUES (?)");
+    $stmt->bind_param("s", $adoracaoInfantil);
+    $stmt->execute();
+
+    echo "New record created successfully";
+
+    $stmt->close();
+    $conexao->close();
+    
 }
 
 ?>

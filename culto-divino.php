@@ -6,15 +6,28 @@ if(isset($_POST['submit']))
 
     include_once('config.php');
 
-    //print_r($_POST['adoracaoInfantil']);//
 
     $oracaoDeInvocacao = $_POST['oracaoDeInvocacao'];
     $hinoInicialCD = $_POST['hinoInicialCD'];
     $oracaoIntercessora = $_POST['oracaoIntercessora'];
     $sermao = $_POST['sermao'];
 
-    $result = mysqli_query($conexao, "INSERT INTO eventos(oracaoDeInvocacao, hinoInicialCD, oracaoIntercessora, sermao, ) VALUES ('$oracaoDeInvocacao', '$hinoInicialCD', '$oracaoIntercessora', '$sermao')");
+    $sql = "DELETE FROM `culto-divino`";
+    if ($conexao->query($sql) === TRUE) {
+        echo "Record deleted successfully";
+    } else {
+        echo "Error deleting record: " . $conexao->error;
+    }
 
+    $stmt = $conexao->prepare("INSERT INTO `culto-divino`(oracaoDeInvocacao, hinoInicialCD, oracaoIntercessora, sermao) VALUES (?, ?, ?, ?)");
+    $stmt->bind_param("ssss", $oracaoDeInvocacao, $hinoInicialCD, $oracaoIntercessora, $sermao);
+    $stmt->execute();
+
+    echo "New record created successfully";
+
+    $stmt->close();
+    $conexao->close();
+    
 }
 
 ?>
