@@ -2,8 +2,8 @@
 
     $dbHost = 'Localhost';
     $dbUsername = 'root';
-    $dbPassword = 'admin';
-    $dbName = 'cultoDeSabado';
+    $dbPassword = '';
+    $dbName = 'culto-de-sabado';
 
     $conexao = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
 

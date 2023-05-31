@@ -8,7 +8,7 @@
     <title>Louvores</title>
 </head>
 <body>
-    <form action="" class="corpo">
+    <form action="louvores.php" method="POST" class="corpo">
         
         <section class="corpo__container">
 
@@ -43,7 +43,7 @@
         </section>
 
         <div class="btns">
-            <button class="btn">Enviar</button>
+            <button class="btn" type="submit">Enviar</button>
             <button type="button" onclick="window.location.href='menu.html'" class="btn">Voltar</button>
         </div>
 

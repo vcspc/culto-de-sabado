@@ -1,3 +1,24 @@
+<?php
+
+if(isset($_POST['submit']))
+
+{
+
+    include_once('config.php');
+
+    //print_r($_POST['adoracaoInfantil']);//
+
+    $oracaoDeInvocacao = $_POST['oracaoDeInvocacao'];
+    $hinoInicialCD = $_POST['hinoInicialCD'];
+    $oracaoIntercessora = $_POST['oracaoIntercessora'];
+    $sermao = $_POST['sermao'];
+
+    $result = mysqli_query($conexao, "INSERT INTO eventos(oracaoDeInvocacao, hinoInicialCD, oracaoIntercessora, sermao, ) VALUES ('$oracaoDeInvocacao', '$hinoInicialCD', '$oracaoIntercessora', '$sermao')");
+
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +33,7 @@
 </head>
 <body>
 
-    <form class="corpo">
+    <form class="corpo" action="culto-divino.php" method="POST">
 
         <section class="corpo__container">
             
@@ -42,7 +63,7 @@
         </section>
 
         <div class="btns">
-            <button class="btn">Enviar</button>
+            <button class="btn" type="submit" name="submit">Enviar</button>
             <button type="button" onclick="window.location.href='menu.html'" class="btn">Voltar</button>
         </div>
 

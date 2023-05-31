@@ -1,3 +1,22 @@
+<?php
+
+if(isset($_POST['submit']))
+
+{
+
+    include_once('config.php');
+
+    //print_r($_POST['adoracaoInfantil']);//
+
+    $adoracaoInfantil = $_POST['adoracaoInfantil'];
+
+    $result = mysqli_query($conexao, "INSERT INTO eventos(adoracaoInfantil) VALUES ('$adoracaoInfantil')");
+
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +30,7 @@
     <title>Adoração Infantil</title>
 </head>
 <body>
-    <form class="corpo">
+    <form class="corpo" action="adoracao-infantil.php" method="POST">
         
         <section class="corpo__container">
 
@@ -25,7 +44,7 @@
         </section>
 
         <div class="btns">
-            <button class="btn">Enviar</button>
+            <button class="btn" type="submit" name="submit">Enviar</button>
             <button type="button" onclick="window.location.href='menu.html'" class="btn">Voltar</button>
         </div>
 

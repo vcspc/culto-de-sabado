@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <form class="corpo">
+    <form class="corpo" action="sonoplasta.php" method="POST">
 
         <section class="corpo__container">
             
@@ -22,7 +22,7 @@
         </section>
 
         <div class="btns">
-            <button class="btn">Enviar</button>
+            <button class="btn" type="submit">Enviar</button>
             <button type="button" onclick="window.location.href='menu.html'" class="btn">Voltar</button>
         </div>
 
