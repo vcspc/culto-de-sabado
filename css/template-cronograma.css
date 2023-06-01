@@ -4,6 +4,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  padding: 0;
 }
 body #cabecalho {
   color: #4b207f;
@@ -14,6 +15,7 @@ body .tabela {
   grid-template-columns: auto auto auto;
   grid-template-rows: auto;
   grid-gap: 5px;
+  grid-row-end: auto;
   grid-template-areas: "h0845 louvoresES louvor1ESCampo" "h0845 louvoresES louvor2ESCampo" "h0900 hinoInicialES hinoInicialESCampo" "h0900 boasVindasES boasVindasESCampo" "h0900 oracaoES oracaoESCampo" "h0900 informativoES informativoESCampo" "h0900 estudoDaLicaoES estudoDaLicaoESCampo" "h1000 encES encESCampo" "h1000 mensagemMusicalES mensagemMusicalESCampo" "h1000 anuncios anunciosCampo" "h1015 louvoresCD louvor1CDCampo" "h1015 louvoresCD louvor2CDCampo" "h1015 entradaDaPlataforma entradaDaPlataformaCampo" "h1015 oracaoDeInvocacao oracaoDeInvocacaoCampo" "h1015 hinoInicial hinoInicialCampo" "h1015 oracaoIntercessora oracaoIntercessoraCampo" "h1015 adoracaoInfantil adoracaoInfantilCampo" "h1015 provaiEVede provaiEVedeCampo" "h1015 dizimoEOfertas dizimoEOfertasCampo" "h1015 mensagemMusical mensagemMusicalCampo" "h1015 sermao sermaoCampo" "h1145 encerramentoCD encerramentoCDCampo";
 }
 body .tabela .enfase {
