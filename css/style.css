@@ -5,28 +5,32 @@
   align-items: center;
   width: 412px;
   flex-direction: column;
-  margin: 0 auto; }
-  .corpo .titulo {
-    color: #4b207f;
-    font-size: 2rem;
-    margin: 0;
-    font-family: "Ysabeau", sans-serif;
-    font-weight: bold; }
-  .corpo .texto {
-    color: black;
-    font-size: 1rem;
-    margin: 0;
-    font-family: "Jaldi", sans-serif;
-    margin: 1.5rem 0 1.5rem 0; }
-  .corpo .btn {
-    background-color: #4b207f;
-    color: white;
-    border-radius: 5px;
-    height: 2rem;
-    width: 8.5rem;
-    font-size: 0.8rem;
-    margin: 0.5rem 0; }
+  margin: 0 auto;
+}
+.corpo .titulo {
+  color: #4b207f;
+  font-size: 2rem;
+  margin: 0;
+  font-family: "Ysabeau", sans-serif;
+  font-weight: bold;
+}
+.corpo .texto {
+  color: black;
+  font-size: 1rem;
+  margin: 0;
+  font-family: "Jaldi", sans-serif;
+  margin: 1.5rem 0 1.5rem 0;
+}
+.corpo .btn {
+  background-color: #4b207f;
+  color: white;
+  border-radius: 5px;
+  height: 2rem;
+  width: 8.5rem;
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+}
 
-/*# sourceMappingURL=style.scss.map */
+
 
 /*# sourceMappingURL=style.css.map */

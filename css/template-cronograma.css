@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Jaldi&family=Ysabeau:ital,wght@0,300;1,400&display=swap");
+body {
+  width: 412px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+body #cabecalho {
+  color: #4b207f;
+}
+body .tabela {
+  font-size: 0.8rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  grid-gap: 5px;
+  grid-template-areas: "h0845 louvoresES louvor1ESCampo" "h0845 louvoresES louvor2ESCampo" "h0900 hinoInicialES hinoInicialESCampo" "h0900 boasVindasES boasVindasESCampo" "h0900 oracaoES oracaoESCampo" "h0900 informativoES informativoESCampo" "h0900 estudoDaLicaoES estudoDaLicaoESCampo" "h1000 encES encESCampo" "h1000 mensagemMusicalES mensagemMusicalESCampo" "h1000 anuncios anunciosCampo" "h1015 louvoresCD louvor1CDCampo" "h1015 louvoresCD louvor2CDCampo" "h1015 entradaDaPlataforma entradaDaPlataformaCampo" "h1015 oracaoDeInvocacao oracaoDeInvocacaoCampo" "h1015 hinoInicial hinoInicialCampo" "h1015 oracaoIntercessora oracaoIntercessoraCampo" "h1015 adoracaoInfantil adoracaoInfantilCampo" "h1015 provaiEVede provaiEVedeCampo" "h1015 dizimoEOfertas dizimoEOfertasCampo" "h1015 mensagemMusical mensagemMusicalCampo" "h1015 sermao sermaoCampo" "h1145 encerramentoCD encerramentoCDCampo";
+}
+body .tabela .enfase {
+  color: black;
+  font-size: 1rem;
+  margin: 0;
+  font-family: "Jaldi", sans-serif;
+  font-weight: bold;
+}
+body .tabela #h0845 {
+  grid-area: h0845;
+}
+body .tabela #louvoresES {
+  grid-area: louvoresES;
+}
+body .tabela #louvor1ESCampo {
+  grid-area: louvor1ESCampo;
+}
+body .tabela #louvor2ESCampo {
+  grid-area: louvor2ESCampo;
+}
+body .tabela #h0900 {
+  grid-area: h0900;
+}
+body .tabela #hinoInicialES {
+  grid-area: hinoInicialES;
+}
+body .tabela #hinoInicialESCampo {
+  grid-area: hinoInicialESCampo;
+}
+body .tabela #boasVindasES {
+  grid-area: boasVindasES;
+}
+body .tabela #boasVindasESCampo {
+  grid-area: boasVindasESCampo;
+}
+body .tabela #oracaoES {
+  grid-area: oracaoES;
+}
+body .tabela #oracaoESCampo {
+  grid-area: oracaoESCampo;
+}
+body .tabela #informativoES {
+  grid-area: informativoES;
+}
+body .tabela #informativoESCampo {
+  grid-area: informativoESCampo;
+}
+body .tabela #estudoDaLicaoES {
+  grid-area: estudoDaLicaoES;
+}
+body .tabela #estudoDaLicaoESCampo {
+  grid-area: estudoDaLicaoESCampo;
+}
+body .tabela #h1000 {
+  grid-area: h1000;
+}
+body .tabela #encES {
+  grid-area: encES;
+}
+body .tabela #encESCampo {
+  grid-area: encESCampo;
+}
+body .tabela #mensagemMusicalES {
+  grid-area: mensagemMusicalES;
+}
+body .tabela #mensagemMusicalESCampo {
+  grid-area: mensagemMusicalESCampo;
+}
+body .tabela #anuncios {
+  grid-area: anuncios;
+}
+body .tabela #anunciosCampo {
+  grid-area: anunciosCampo;
+}
+body .tabela #h1015 {
+  grid-area: h1015;
+}
+body .tabela #louvoresCD {
+  grid-area: louvoresCD;
+}
+body .tabela #louvor1CDCampo {
+  grid-area: louvor1CDCampo;
+}
+body .tabela #louvor2CDCampo {
+  grid-area: louvor2CDCampo;
+}
+body .tabela #entradaDaPlataforma {
+  grid-area: entradaDaPlataforma;
+}
+body .tabela #entradaDaPlataformaCampo {
+  grid-area: entradaDaPlataformaCampo;
+}
+body .tabela #oracaoDeInvocacao {
+  grid-area: oracaoDeInvocacao;
+}
+body .tabela #oracaoDeInvocacaoCampo {
+  grid-area: oracaoDeInvocacaoCampo;
+}
+body .tabela #hinoInicial {
+  grid-area: hinoInicial;
+}
+body .tabela #hinoInicialCampo {
+  grid-area: hinoInicialCampo;
+}
+body .tabela #oracaoIntercessora {
+  grid-area: oracaoIntercessora;
+}
+body .tabela #oracaoIntercessoraCampo {
+  grid-area: oracaoIntercessoraCampo;
+}
+body .tabela #adoracaoInfantil {
+  grid-area: adoracaoInfantil;
+}
+body .tabela #adoracaoInfantilCampo {
+  grid-area: adoracaoInfantilCampo;
+}
+body .tabela #provaiEVede {
+  grid-area: provaiEVede;
+}
+body .tabela #provaiEVedeCampo {
+  grid-area: provaiEVedeCampo;
+}
+body .tabela #dizimoEOfertas {
+  grid-area: dizimoEOfertas;
+}
+body .tabela #dizimoEOfertasCampo {
+  grid-area: dizimoEOfertasCampo;
+}
+body .tabela #mensagemMusical {
+  grid-area: mensagemMusical;
+}
+body .tabela #mensagemMusicalCampo {
+  grid-area: mensagemMusicalCampo;
+}
+body .tabela #sermao {
+  grid-area: sermao;
+}
+body .tabela #h1145 {
+  grid-area: h1145;
+}
+body .tabela #encerramentoCD {
+  grid-area: encerramentoCD;
+}
+
+/*# sourceMappingURL=template-cronograma.css.map */

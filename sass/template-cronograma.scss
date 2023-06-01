@@ -1,0 +1,187 @@
+@import 'mixins';
+@import 'variaveis';
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Jaldi&family=Ysabeau:ital,wght@0,300;1,400&display=swap");
+
+body {
+    width: $largura-pagina;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    #cabecalho {
+        color: $cor-principal;
+    }
+        
+    .tabela {
+        font-size: 0.8rem;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        grid-gap: 5px;
+        grid-template-areas: 
+            "h0845 louvoresES louvor1ESCampo"
+            "h0845 louvoresES louvor2ESCampo"
+            "h0900 hinoInicialES hinoInicialESCampo"
+            "h0900 boasVindasES boasVindasESCampo"
+            "h0900 oracaoES oracaoESCampo"
+            "h0900 informativoES informativoESCampo"
+            "h0900 estudoDaLicaoES estudoDaLicaoESCampo"
+            "h1000 encES encESCampo"
+            "h1000 mensagemMusicalES mensagemMusicalESCampo"
+            "h1000 anuncios anunciosCampo"
+            "h1015 louvoresCD louvor1CDCampo"
+            "h1015 louvoresCD louvor2CDCampo"
+            "h1015 entradaDaPlataforma entradaDaPlataformaCampo"
+            "h1015 oracaoDeInvocacao oracaoDeInvocacaoCampo"
+            "h1015 hinoInicial hinoInicialCampo"
+            "h1015 oracaoIntercessora oracaoIntercessoraCampo"
+            "h1015 adoracaoInfantil adoracaoInfantilCampo"
+            "h1015 provaiEVede provaiEVedeCampo"
+            "h1015 dizimoEOfertas dizimoEOfertasCampo"
+            "h1015 mensagemMusical mensagemMusicalCampo"
+            "h1015 sermao sermaoCampo"
+            "h1145 encerramentoCD encerramentoCDCampo";
+        
+        .enfase {
+            @include enfase(1rem, $fonte-texto, $cor-secundaria);
+        }
+            
+
+        #h0845 {
+            grid-area: h0845;
+        }
+        #louvoresES {
+            grid-area: louvoresES;
+        }
+        #louvor1ESCampo {
+            grid-area: louvor1ESCampo;
+        }
+        #louvor2ESCampo {
+            grid-area: louvor2ESCampo;
+        }
+        #h0900 {
+            grid-area: h0900;
+        }
+        #hinoInicialES {
+            grid-area: hinoInicialES;
+        }
+        #hinoInicialESCampo {
+            grid-area: hinoInicialESCampo;
+        }
+        #boasVindasES {
+            grid-area: boasVindasES;
+        }
+        #boasVindasESCampo {
+            grid-area: boasVindasESCampo;
+        }
+        #oracaoES {
+            grid-area: oracaoES;
+        }
+        #oracaoESCampo {
+            grid-area: oracaoESCampo;
+        }
+        #informativoES {
+            grid-area: informativoES;
+        }
+        #informativoESCampo {
+            grid-area: informativoESCampo;
+        }
+        #estudoDaLicaoES {
+            grid-area: estudoDaLicaoES;
+        }
+        #estudoDaLicaoESCampo {
+            grid-area: estudoDaLicaoESCampo;
+        }
+        #h1000 {
+            grid-area: h1000;
+        }
+        #encES {
+            grid-area: encES;
+        }
+        #encESCampo {
+            grid-area: encESCampo;
+        }
+        #mensagemMusicalES {
+            grid-area: mensagemMusicalES;
+        }
+        #mensagemMusicalESCampo {
+            grid-area: mensagemMusicalESCampo;
+        }
+        #anuncios {
+            grid-area: anuncios;
+        }
+        #anunciosCampo {
+            grid-area: anunciosCampo;
+        }
+        #h1015 {
+            grid-area: h1015;
+        }
+        #louvoresCD {
+            grid-area: louvoresCD;
+        }
+        #louvor1CDCampo {
+            grid-area: louvor1CDCampo;
+        }
+        #louvor2CDCampo {
+            grid-area: louvor2CDCampo;
+        }
+        #entradaDaPlataforma {
+            grid-area: entradaDaPlataforma;
+        }
+        #entradaDaPlataformaCampo {
+            grid-area: entradaDaPlataformaCampo;
+        }
+        #oracaoDeInvocacao {
+            grid-area: oracaoDeInvocacao;
+        }
+        #oracaoDeInvocacaoCampo {
+            grid-area: oracaoDeInvocacaoCampo;
+        }
+        #hinoInicial {
+            grid-area: hinoInicial;
+        }
+        #hinoInicialCampo {
+            grid-area: hinoInicialCampo;
+        }
+        #oracaoIntercessora {
+            grid-area: oracaoIntercessora;
+        }
+        #oracaoIntercessoraCampo {
+            grid-area: oracaoIntercessoraCampo;
+        }
+        #adoracaoInfantil {
+            grid-area: adoracaoInfantil;
+        }
+        #adoracaoInfantilCampo {
+            grid-area: adoracaoInfantilCampo;
+        }
+        #provaiEVede {
+            grid-area: provaiEVede;
+        }
+        #provaiEVedeCampo {
+            grid-area: provaiEVedeCampo;
+        }
+        #dizimoEOfertas {
+            grid-area: dizimoEOfertas;
+        }
+        #dizimoEOfertasCampo {
+            grid-area: dizimoEOfertasCampo;
+        }
+        #mensagemMusical {
+            grid-area: mensagemMusical;
+        }
+        #mensagemMusicalCampo {
+            grid-area: mensagemMusicalCampo;
+        }
+        #sermao {
+            grid-area: sermao;
+        }
+        #h1145 {
+            grid-area: h1145;
+        }
+        #encerramentoCD {
+            grid-area: encerramentoCD;
+        }
+    }
+    
+}
