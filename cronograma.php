@@ -96,7 +96,7 @@ if (mysqli_num_rows($resultadoSonoplastia) > 0) {
 </head>
 <body>
     <header id="cabecalho">
-        <h1>Culto de Sábado</h1>
+        <h1>Cronograma do Culto</h1>
     </header>
     <main class="tabela">
         <div id="h0845" class="enfase">08:45</div>
@@ -145,6 +145,10 @@ if (mysqli_num_rows($resultadoSonoplastia) > 0) {
         <div id="sermaoCampo"><?php echo $sermao; ?></div>
         <div id="h1145" class="enfase">11:45</div>
         <div id="encerramentoCD" class="enfase">Encerramento</div>
-    </main>    
+    </main>  
+    <div class="btns">
+        <button class="btn" onclick="window.print()" type="button">Baixar</button>
+        <button type="button" onclick="window.location.href='menu.html'" class="btn">Voltar</button>
+    </div>
 </body>
 </html>

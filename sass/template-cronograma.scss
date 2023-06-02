@@ -6,11 +6,12 @@ body {
     width: $largura-pagina;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    padding: 0;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 
     #cabecalho {
-        color: $cor-principal;
+        @include enfase(0.8rem, $fonte-titulo, $cor-principal);
     }
         
     .tabela {
@@ -18,8 +19,8 @@ body {
         display: grid;
         grid-template-columns: auto auto auto;
         grid-template-rows: auto;
-        grid-gap: 5px;
-        grid-row-end: auto;
+        grid-gap: 7px;
+        align-items: center;
         grid-template-areas: 
             "h0845 louvoresES louvor1ESCampo"
             "h0845 louvoresES louvor2ESCampo"
@@ -51,9 +52,11 @@ body {
 
         #h0845 {
             grid-area: h0845;
+            align-self: flex-start;
         }
         #louvoresES {
             grid-area: louvoresES;
+            align-self: flex-start;
         }
         #louvor1ESCampo {
             grid-area: louvor1ESCampo;
@@ -63,6 +66,7 @@ body {
         }
         #h0900 {
             grid-area: h0900;
+            align-self: flex-start;
         }
         #hinoInicialES {
             grid-area: hinoInicialES;
@@ -96,6 +100,7 @@ body {
         }
         #h1000 {
             grid-area: h1000;
+            align-self: flex-start;
         }
         #encES {
             grid-area: encES;
@@ -117,9 +122,11 @@ body {
         }
         #h1015 {
             grid-area: h1015;
+            align-self: flex-start;
         }
         #louvoresCD {
             grid-area: louvoresCD;
+            align-self: flex-start;
         }
         #louvor1CDCampo {
             grid-area: louvor1CDCampo;
@@ -180,10 +187,15 @@ body {
         }
         #h1145 {
             grid-area: h1145;
+            align-self: flex-start;
         }
         #encerramentoCD {
             grid-area: encerramentoCD;
         }
     }
-    
+    .btn {
+        @include btn (1.5rem, 7rem);
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
 }

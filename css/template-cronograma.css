@@ -3,19 +3,24 @@ body {
   width: 412px;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  padding: 0;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 body #cabecalho {
   color: #4b207f;
+  font-size: 0.8rem;
+  margin: 0;
+  font-family: "Ysabeau", sans-serif;
+  font-weight: bold;
 }
 body .tabela {
   font-size: 0.8rem;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto;
-  grid-gap: 5px;
-  grid-row-end: auto;
+  grid-gap: 7px;
+  align-items: center;
   grid-template-areas: "h0845 louvoresES louvor1ESCampo" "h0845 louvoresES louvor2ESCampo" "h0900 hinoInicialES hinoInicialESCampo" "h0900 boasVindasES boasVindasESCampo" "h0900 oracaoES oracaoESCampo" "h0900 informativoES informativoESCampo" "h0900 estudoDaLicaoES estudoDaLicaoESCampo" "h1000 encES encESCampo" "h1000 mensagemMusicalES mensagemMusicalESCampo" "h1000 anuncios anunciosCampo" "h1015 louvoresCD louvor1CDCampo" "h1015 louvoresCD louvor2CDCampo" "h1015 entradaDaPlataforma entradaDaPlataformaCampo" "h1015 oracaoDeInvocacao oracaoDeInvocacaoCampo" "h1015 hinoInicial hinoInicialCampo" "h1015 oracaoIntercessora oracaoIntercessoraCampo" "h1015 adoracaoInfantil adoracaoInfantilCampo" "h1015 provaiEVede provaiEVedeCampo" "h1015 dizimoEOfertas dizimoEOfertasCampo" "h1015 mensagemMusical mensagemMusicalCampo" "h1015 sermao sermaoCampo" "h1145 encerramentoCD encerramentoCDCampo";
 }
 body .tabela .enfase {
@@ -27,9 +32,11 @@ body .tabela .enfase {
 }
 body .tabela #h0845 {
   grid-area: h0845;
+  align-self: flex-start;
 }
 body .tabela #louvoresES {
   grid-area: louvoresES;
+  align-self: flex-start;
 }
 body .tabela #louvor1ESCampo {
   grid-area: louvor1ESCampo;
@@ -39,6 +46,7 @@ body .tabela #louvor2ESCampo {
 }
 body .tabela #h0900 {
   grid-area: h0900;
+  align-self: flex-start;
 }
 body .tabela #hinoInicialES {
   grid-area: hinoInicialES;
@@ -72,6 +80,7 @@ body .tabela #estudoDaLicaoESCampo {
 }
 body .tabela #h1000 {
   grid-area: h1000;
+  align-self: flex-start;
 }
 body .tabela #encES {
   grid-area: encES;
@@ -93,9 +102,11 @@ body .tabela #anunciosCampo {
 }
 body .tabela #h1015 {
   grid-area: h1015;
+  align-self: flex-start;
 }
 body .tabela #louvoresCD {
   grid-area: louvoresCD;
+  align-self: flex-start;
 }
 body .tabela #louvor1CDCampo {
   grid-area: louvor1CDCampo;
@@ -156,9 +167,20 @@ body .tabela #sermao {
 }
 body .tabela #h1145 {
   grid-area: h1145;
+  align-self: flex-start;
 }
 body .tabela #encerramentoCD {
   grid-area: encerramentoCD;
+}
+body .btn {
+  background-color: #4b207f;
+  color: white;
+  border-radius: 5px;
+  height: 1.5rem;
+  width: 7rem;
+  font-size: 0.8rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=template-cronograma.css.map */
